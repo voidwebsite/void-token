@@ -15,12 +15,11 @@
       padding: 2rem;
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
-    .info, .liquidity, .disclaimer {
-      margin-top: 2rem;
-      max-width: 700px;
+    .info {
+      margin-top: 1.5rem;
       line-height: 1.6;
       text-align: center;
     }
@@ -33,24 +32,15 @@
       color: #0ff;
       text-decoration: none;
     }
-    button {
-      margin-top: 1.5rem;
-      padding: 0.7rem 1.5rem;
-      background-color: #111;
-      color: #0ff;
-      border: 1px solid #0ff;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0ff;
-      color: #000;
+    .burn {
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      padding-top: 1.5rem;
     }
   </style>
 </head>
 <body>
   <h1>VOIDX</h1>
-
   <div class="info">
     <p><strong>Name:</strong> VOID</p>
     <p><strong>Ticker:</strong> VOIDX</p>
@@ -64,40 +54,35 @@
     <p><strong>Taxes:</strong> 1% Auto-Liquidity • 0.5% Dev Wallet</p>
     <p><strong>Max Wallet at Launch:</strong> 5% (100M tokens)</p>
     <p><strong>Ownership:</strong> Not Renounced</p>
+    <p><strong>Liquidity Status:</strong><br/>
+      <a href="https://mudra.website/?certificate=yes&type=0&lp=0x33f6a8e00a1559156cd9dfcaeb63ed8f7e64a6bf" target="_blank">
+        Locked via Mudra
+      </a>
+    </p>
+    <p><strong>DEX:</strong><br/>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125" target="_blank">
+        Trade on PancakeSwap
+      </a>
+    </p>
+    <p><strong>Explorer:</strong><br/>
+      <a href="https://bscscan.com/token/0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125" target="_blank">
+        View on BscScan
+      </a>
+    </p>
+
+    <div class="burn">
+      <p><strong>Burn Tracker:</strong></p>
+      <p>Total Burned: <strong>5,000,000 VOIDX</strong></p>
+      <p>Last Updated: July 16, 2025</p>
+      <p>Updates will be posted here after each manual burn.</p>
+    </div>
   </div>
 
-  <div class="liquidity">
-    <h2>Liquidity Status</h2>
-    <p>💧 150M VOIDX currently paired with 0.876 BNB and locked via Mudra.</p>
-    <p><a href="https://mudra.website/?certificate=yes&type=0&lp=0x33f6a8e00a1559156cd9dfcaeb63ed8f7e64a6bf" target="_blank">View Lock Certificate</a></p>
-    <button onclick="window.open('https://pancakeswap.finance/swap?outputCurrency=0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125', '_blank')">Trade on PancakeSwap</button>
-    <br/>
-    <button onclick="window.open('https://bscscan.com/token/0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125', '_blank')">View on BscScan</button>
-  </div>
-
-  <div class="info">
-    <h2>Token Allocation</h2>
-    <p>• 150M in liquidity (locked)<br/>
-       • 150M to be added to liquidity soon<br/>
-       • 50M reserved for airdrops<br/>
-       • 400M reserved for gradual liquidity adds (sales + burns)<br/>
-       • 500M reserved to burn as liquidity is added<br/>
-       • 150M for listings and marketing<br/>
-       • Remaining 600M held by team, locked with vesting</p>
-  </div>
-
-  <div class="disclaimer">
-    <h2>Disclaimer</h2>
-    <p>
+  <div class="note">
       We're sick of crypto being all about childish memes. VOIDX is just a regular token. No promises, no overhype, no artificial narrative.
       We’re not going to attach ourselves to a dog, a frog, Elon Musk, or the latest meme. No buzzwords like AI, NFTs, staking, reflections, or fake “utility”.
       We're not claiming to be the biggest token in the world, we're not shouting "HODL" or "to the moon" every hour. We're just here like everyone else to make money in a transparent, above-board way.
       Feel free to join us.
-    </p>
-  </div>
-
-  <div class="note">
-    No memes. No promises. Just VOID.
   </div>
 </body>
 </html>
