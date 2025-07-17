@@ -15,27 +15,41 @@
       padding: 2rem;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     .info {
       margin-top: 1.5rem;
       line-height: 1.6;
       text-align: center;
+      max-width: 600px;
     }
-    .note {
+    .note, .disclaimer {
       margin-top: 2rem;
       font-style: italic;
       color: #aaa;
+      text-align: center;
     }
     a {
       color: #0ff;
       text-decoration: none;
     }
-    .burn {
+    button {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #0ff;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .burn-tracker {
       margin-top: 2rem;
-      border-top: 1px solid #444;
-      padding-top: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background-color: #111;
     }
   </style>
 </head>
@@ -53,48 +67,48 @@
     <p><strong>Total Supply:</strong> 2,000,000,000 VOIDX</p>
     <p><strong>Taxes:</strong> 1% Auto-Liquidity • 0.5% Dev Wallet</p>
     <p><strong>Max Wallet at Launch:</strong> 5% (100M tokens)</p>
-    <div class="info">
-  <h2>Token Allocation</h2>
-  <ul>
-    <li><strong>150M</strong> in liquidity (locked)</li>
-    <li><strong>150M</strong> planned liquidity (team-funded, upcoming)</li>
-    <li><strong>50M</strong> reserved for airdrops</li>
-    <li><strong>400M</strong> reserved for gradual liquidity boosts (paired with BNB and matched burns)</li>
-    <li><strong>500M</strong> allocated for future burns</li>
-    <li><strong>150M</strong> reserved for listings and marketing</li>
-    <li><strong>600M</strong> in the team wallet (will be locked with a vesting schedule)</li>
-  </ul>
-</div>
     <p><strong>Ownership:</strong> Not Renounced</p>
-    <p><strong>Liquidity Status:</strong><br/>
+
+    <h2>Token Allocation</h2>
+    <p>• <strong>150M</strong> in liquidity (locked)</p>
+    <p>• <strong>150M</strong> planned liquidity (team-funded, upcoming)</p>
+    <p>• <strong>50M</strong> reserved for airdrops</p>
+    <p>• <strong>400M</strong> reserved for gradual liquidity boosts (paired with BNB and matched burns)</p>
+    <p>• <strong>500M</strong> allocated for future burns</p>
+    <p>• <strong>150M</strong> reserved for listings and marketing</p>
+    <p>• <strong>600M</strong> in the team wallet (will be locked with a vesting schedule)</p>
+
+    <div class="burn-tracker">
+      <h3>🔥 Manual Burn Tracker</h3>
+      <p><strong>Total Burned:</strong> 0 VOIDX</p>
+      <p>(Updated manually)</p>
+    </div>
+
+    <h2>Liquidity Status</h2>
+    <p><strong>Locked via Mudra:</strong><br/>
       <a href="https://mudra.website/?certificate=yes&type=0&lp=0x33f6a8e00a1559156cd9dfcaeb63ed8f7e64a6bf" target="_blank">
-        Locked via Mudra
-      </a>
-    </p>
-    <p><strong>DEX:</strong><br/>
-      <a href="https://pancakeswap.finance/swap?outputCurrency=0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125" target="_blank">
-        Trade on PancakeSwap
-      </a>
-    </p>
-    <p><strong>Explorer:</strong><br/>
-      <a href="https://bscscan.com/token/0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125" target="_blank">
-        View on BscScan
+        View Lock Certificate
       </a>
     </p>
 
-    <div class="burn">
-      <p><strong>Burn Tracker:</strong></p>
-      <p>Total Burned: <strong>5,000,000 VOIDX</strong></p>
-      <p>Last Updated: July 16, 2025</p>
-      <p>Updates will be posted here after each manual burn.</p>
-    </div>
+    <button onclick="window.open('https://pancakeswap.finance/swap?outputCurrency=0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125', '_blank')">
+      Trade on PancakeSwap
+    </button>
+    <br/>
+    <button onclick="window.open('https://bscscan.com/token/0x72c9ABFaA5E356a46E2Cb2c2B35B43c78D04C125', '_blank')">
+      View on BscScan
+    </button>
   </div>
 
   <div class="note">
-      We're sick of crypto being all about childish memes. VOIDX is just a regular token. No promises, no overhype, no artificial narrative.
-      We’re not going to attach ourselves to a dog, a frog, Elon Musk, or the latest meme. No buzzwords like AI, NFTs, staking, reflections, or fake “utility”.
-      We're not claiming to be the biggest token in the world, we're not shouting "HODL" or "to the moon" every hour. We're just here like everyone else to make money in a transparent, above-board way.
-      Feel free to join us.
+    No memes. No promises. Just VOID.
+  </div>
+
+  <div class="disclaimer">
+    We're sick of crypto being about childish memes and overhyped trends.<br/>
+    No NFTs, no AI gimmicks, no frogs, dogs, or Elon. Just a token.<br/>
+    We're not claiming to be the next biggest thing. No spammy "HODL" chants or moon hype.<br/>
+    We're here like everyone else — to make money, above the table.
   </div>
 </body>
 </html>
